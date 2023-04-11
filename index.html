@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Sistemas</title>
+</head>
+<body>
+    
+
+    <script>
+        // questão 01 ----------------------------
+            let indice = 13;
+            let SOMA = 0;
+            let K = 0;
+
+
+            while (K < indice){
+                K = K + 1;
+                SOMA = SOMA + K;
+            }
+
+            console.log("A soma dos valores é: " + SOMA);
+
+        // questão 02 ----------------------------
+
+        function sequenciaFibonacci (n){
+            let a = 0;
+            let b = 1;
+            
+            while(b <= n) {
+                if ( b === n ){
+                    return true
+                }
+
+                let temp = b;
+                b = a + b;
+                a = temp;
+            }
+            return false
+        }
+
+        let num = parseInt(prompt("Esse prompt é para a questão 02. por favor, digite um número: "));
+
+        if (sequenciaFibonacci(num)){
+            console.log(num + " Pertece a sequência Fibionacci!");
+        } else {
+            console.log(num + " Não pertence a sequência Fibionacci!")
+        }
+
+        // questão 03 ----------------------------
+                // Logica da a) Somando 2 ao número anterio, o próximo será "9"
+                // logica da b) Multiplicar por 2 o número anterior, o próximo será "128"
+                // logica da c) Elevar os números inteiros naturais em 2,  o próximo será "49"
+                // Logica da d) Elevar o índice em 2 e adicionar 20, o próximo número é "100".
+                // Logica da e) Somar os dois numeros anteriores, o proximo é "13"
+                // logica da f) Somar um número crescente aos números pares e um número constante aos números ímpares, o próximo número é "20".
+
+        // questão 04 ----------------------------
+            // Como o carro está com uma velocidade maior que o caminhão, e tem atag sem parar, o carro levará cerca de 54min 
+            // para chegar a Franca, já o caminhão levará cercade 85min. Ao se encontrarem o caminão percorreu uma menor distância
+            // portanto o carro estará mais proximo de Ribeirão do que o caminhão.
+
+
+
+        // questão 05 ----------------------------
+            var string = "exemplo de string";
+            var stringReversa = "";
+
+            for (let i = string.length - 1; i >= 0; i--) {
+              stringReversa += string[i];
+            }
+
+            console.log("string normal: " + string);
+            console.log("string invertida: " + stringReversa);
+    </script>
+</body>
+</html>
